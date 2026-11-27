@@ -1,0 +1,9 @@
+# Public identifiers and endpoints only: never include credentials.
+# Rules are checked in order. All selectors in a rule must match.
+[[routes]]
+name = "demo-pr"
+repo = "demo"
+folder = "/work/demo"
+states = ["done"]
+pr_open = true
+url = "https://example.invalid/hook"

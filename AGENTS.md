@@ -6,12 +6,12 @@ result.
 
 ## Build and test
 
-- Install: not required yet (no runtime package in the tree).
-- Test: not defined yet. The first runtime issue must add a single `verify`
-  command from the repository root (core unit tests; later also
-  `orca plugin validate .` once `orca-plugin.json` exists).
-- Focused verification: the same `verify` command, or the narrowest test
-  file the issue names, once it exists.
+- Install: none. The core and CLI use Python 3.11+ and its standard library.
+- Verify from the repository root: `./verify` (core and CLI unit tests).
+- Focused verification: `python3 -m unittest discover -s tests -v`, or the
+  narrowest test file the issue names.
+- No typechecker or plugin validation is configured yet. Add
+  `orca plugin validate .` when `orca-plugin.json` exists.
 - Architecture and domain vocabulary: [docs/SPEC.md](docs/SPEC.md).
 
 ## Review
