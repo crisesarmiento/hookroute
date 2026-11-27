@@ -1,0 +1,9 @@
+{
+  "repo": "demo",
+  "workspace": "demo-feature",
+  "workspace_path": "/work/demo/feature",
+  "branch": "feature/demo",
+  "state": "working",
+  "timestamp": "2026-07-03T12:00:00Z",
+  "pr_open": true
+}
